@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=["c","c++","java","python","php","angular"];
+        var arr1=["ele1","ele2"];
+        document.write("array element: " +arr+ "<br>");
+        document.write("no. of array elements are: " +arr.length+ "<br>");
+
+        document.write("last pop element of an array: " +arr.pop()+ "<br>");
+        document.write("array element after pop: " +arr+ "<br>");
+
+        document.write("adding element: " +arr.push("javascript")+ "<br>");
+        document.write("array element: " +arr+ "<br>");
+
+        document.write("unshifting array elemets: " +arr.unshift("new element")+ "<br>");
+        document.write("array element: " +arr+ "<br>");
+
+        document.write("shifting array elements: " +arr.shift()+ "<br>");
+        document.write("array element: " +arr+ "<br>");
+
+        document.write("adding new element without removing: " +arr.splice(2,0,"operating system","networking"));
+        document.write("array element: " +arr+ "<br>");
+
+        arr=arr.concat(arr1);
+        document.write("array elements after joining: " +arr+ "<br>");
+
+        document.write("slice: " +arr.slice(1)+ "<br>");
+        document.write("slice with start and end element: " +arr.slice(0,6)+ "<br>");
+
+        document.write("reverse array is: " +arr.reverse()+ "<br>");
+
+    </script>
+</body>
+</html>

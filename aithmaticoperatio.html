@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+function addition()
+{
+    var no1=parseInt(document.frmInput.txtno1.value);
+    var no2=parseInt(document.frmInput.txtno2.value);
+    var a=no1 + no2;
+    document.getElementById("ans").innerHTML="addition is " +a;
+}
+
+function substraction()
+{
+    var no1=parseInt(document.frmInput.txtno1.value);
+    var no2=parseInt(document.frmInput.txtno2.value);
+    var b=no1 - no2;
+    document.getElementById("ans1").innerHTML="substraction is " +b;
+}
+
+function multiplication()
+{
+    var no1=parseInt(document.frmInput.txtno1.value);
+    var no2=parseInt(document.frmInput.txtno2.value);
+    var c=no1 * no2;
+    document.getElementById("ans2").innerHTML="multiplication is " +c;
+}
+
+function division()
+{
+    var no1=parseInt(document.frmInput.txtno1.value);
+    var no2=parseInt(document.frmInput.txtno2.value);
+    var d=no1 / no2;
+    document.getElementById("ans3").innerHTML="division is " +d;
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+    <form name="frmInput">
+    <label>Number 1</label>&nbsp;&nbsp;<input type="number" name="txtno1"><br>
+    <label>Number 2</label>&nbsp;&nbsp;<input type="number" name="txtno2"><br>
+    <input type="button" value="add" onclick="addition()"><br><br>
+    <input type="button" value="sub" onclick="substraction()"><br><br>
+    <input type="button" value="mul" onclick="multiplication()"><br><br>
+    <input type="button" value="div" onclick="division()"><br><br>
+  
+    </form>
+    <div id="ans"></div>
+    <div id="ans1"></div>
+    <div id="ans2"></div>
+    <div id="ans3"></div>
+</body>
+</html>
