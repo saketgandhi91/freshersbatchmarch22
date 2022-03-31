@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>this arrays push pop method.</h1>
+<button onclick="myFunction()">tap to add</button>
+<button onclick="yourFunction()">tap to remove
+</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var items = ["oil", "petrol", "diesel", "kerosine"];
+document.getElementById('demo').innerHTML = items;
+
+function myFunction() {
+	items.push("speed petrol");
+	document.getElementById('demo').innerHTML = items;
+}
+
+var items1 = ["oil", "petrol", "diesel", "kerosine"];
+document.getElementById('demo').innerHTML = items1;
+
+function yourFunction() {
+	items1.pop("kerosine");
+	document.getElementById('demo1').innerHTML = items1;
+}
+
+
+
+</script>
+
+</body>
+</html>
